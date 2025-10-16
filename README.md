@@ -107,3 +107,7 @@ for i in {1..5}; do
 done
 echo "TAVILY_API_KEY=\"$TAVILY_API_KEY\"" >> module-4/studio/.env
 ```
+
+
+## Module 1 - Motivation 
+-> This lecture showed that single LLMs aren't enough for complex tasks—you need structured steps, or "chains," to get things done reliably. But the shift now is toward agents, where LLMs choose their own steps. LangGraph helps build these flexible systems by combining fixed control with LLM driven decisions, using graphs to design smarter, more autonomous agents.
