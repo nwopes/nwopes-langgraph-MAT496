@@ -117,5 +117,10 @@ echo "TAVILY_API_KEY=\"$TAVILY_API_KEY\"" >> module-4/studio/.env
 
 **Code modifications:** Changed from mood-based example (happy/sad) to a cooking decision graph (pasta/pizza), adjusted probability from 50/50 to 70/30 split, and personalized the initial input message.
 
-## Module 2 - langsmith studio
+## Module 1 - langsmith studio
 **What I learned:** In this video I learnt how to operate on langsmith studio and how easy it makes it to visualise everything that is going on behind the scenes of the code and it helps with making it easier to understand workflows that would be much harder to do by just reading the code.
+
+## Module 1 - chain.ipynb Learning Summary
+**What I learned:** Learned how to build LangGraph chains using chat messages as state, bind tools to chat models for function calling, and use the add_messages reducer to append messages instead of overwriting them. MessagesState simplifies state management by pre-building message handling with reducers.
+
+**Code modifications:** Changed conversation theme from ocean mammals to space exploration, replaced multiply tool with calculate_distance tool (speed × time), and personalized all message exchanges with my name and space-related content.
