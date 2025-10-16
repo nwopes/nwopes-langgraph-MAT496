@@ -129,3 +129,8 @@ echo "TAVILY_API_KEY=\"$TAVILY_API_KEY\"" >> module-4/studio/.env
 **What I learned:** Built a router agent that uses conditional edges and tools_condition to dynamically route between direct LLM responses or tool execution. Learned how ToolNode executes tool calls automatically and how the LLM decides when to call tools based on user input.
 
 **Code modifications:** Changed multiply function to calculate_area function (length × width for rectangles), updated the example query to calculate room area instead of multiplication, and modified ToolNode to use the new calculate_area tool.
+
+## Module 1 - agent.ipynb Learning Summary
+**What I learned:** Built a ReAct agent that creates a loop between assistant and tools nodes, allowing the model to act (call tools), observe (receive tool output), and reason (decide next action). The agent can chain multiple tool calls sequentially until the task is complete, demonstrating autonomous decision-making.
+
+**Code modifications:** Changed from arithmetic operations (add/multiply/divide) to unit conversion tools (Celsius to Fahrenheit, kilometers to miles, kilograms to pounds), updated system message for conversion tasks, and modified example to chain multiple unit conversions.
