@@ -111,3 +111,8 @@ echo "TAVILY_API_KEY=\"$TAVILY_API_KEY\"" >> module-4/studio/.env
 
 ## Module 1 - Motivation 
 -> This lecture showed that single LLMs aren't enough for complex tasks—you need structured steps, or "chains," to get things done reliably. But the shift now is toward agents, where LLMs choose their own steps. LangGraph helps build these flexible systems by combining fixed control with LLM driven decisions, using graphs to design smarter, more autonomous agents.
+
+## Module 1 - simple-graph.ipynb Learning Summary
+**What I learned:** Built a simple LangGraph with 3 nodes and conditional edges. Learned how StateGraph uses TypedDict for state management, how nodes are Python functions that modify state, and how conditional edges enable dynamic routing between nodes based on custom logic or probability.
+
+**Code modifications:** Changed from mood-based example (happy/sad) to a cooking decision graph (pasta/pizza), adjusted probability from 50/50 to 70/30 split, and personalized the initial input message.
