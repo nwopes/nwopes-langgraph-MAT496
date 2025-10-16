@@ -134,3 +134,8 @@ echo "TAVILY_API_KEY=\"$TAVILY_API_KEY\"" >> module-4/studio/.env
 **What I learned:** Built a ReAct agent that creates a loop between assistant and tools nodes, allowing the model to act (call tools), observe (receive tool output), and reason (decide next action). The agent can chain multiple tool calls sequentially until the task is complete, demonstrating autonomous decision-making.
 
 **Code modifications:** Changed from arithmetic operations (add/multiply/divide) to unit conversion tools (Celsius to Fahrenheit, kilometers to miles, kilograms to pounds), updated system message for conversion tasks, and modified example to chain multiple unit conversions.
+
+## Module 1 - agent-memory.ipynb Learning Summary
+**What I learned:** Implemented persistent memory in agents using LangGraph's checkpointer (MemorySaver) to maintain conversation context across multiple invocations. Learned how thread_id enables stateful conversations by storing graph state checkpoints, allowing agents to reference previous interactions and maintain context.
+
+**Code modifications:** Changed from arithmetic operations (add/multiply/divide) to string manipulation tools (uppercase, reverse, count characters), updated system message for string operations, and modified examples to demonstrate memory retention with text transformations.
