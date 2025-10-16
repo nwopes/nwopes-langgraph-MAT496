@@ -116,3 +116,6 @@ echo "TAVILY_API_KEY=\"$TAVILY_API_KEY\"" >> module-4/studio/.env
 **What I learned:** Built a simple LangGraph with 3 nodes and conditional edges. Learned how StateGraph uses TypedDict for state management, how nodes are Python functions that modify state, and how conditional edges enable dynamic routing between nodes based on custom logic or probability.
 
 **Code modifications:** Changed from mood-based example (happy/sad) to a cooking decision graph (pasta/pizza), adjusted probability from 50/50 to 70/30 split, and personalized the initial input message.
+
+## Module 2 - langsmith studio
+**What I learned:** In this video I learnt how to operate on langsmith studio and how easy it makes it to visualise everything that is going on behind the scenes of the code and it helps with making it easier to understand workflows that would be much harder to do by just reading the code.
