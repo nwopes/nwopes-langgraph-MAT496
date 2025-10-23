@@ -157,3 +157,8 @@ echo "TAVILY_API_KEY=\"$TAVILY_API_KEY\"" >> module-4/studio/.env
 **What I learned:** Learned how to use multiple state schemas in LangGraph including private state (for internal node communication not in graph output), and explicit input/output schemas to filter what keys are exposed. Input/output schemas act as filters to constrain graph interfaces while internal schemas can contain all working data.
 
 **Code modifications:** Changed from generic foo/baz to student_score/bonus_points for private state example, updated question/answer/notes to student_name/grade/feedback for input/output schemas, personalized with my name "Akshat", and modified values to reflect a student grading system with scores and performance feedback.
+
+## Module 2 - trim-filter-messages.ipynb Learning Summary
+**What I learned:** Learned three techniques to manage long-running conversations and control token usage: using RemoveMessage with add_messages reducer to delete old messages from state, filtering messages by slicing before passing to the model, and trimming messages based on token count using trim_messages function with configurable strategies.
+
+**Code modifications:** Changed conversation theme from ocean mammals to space exploration (Mars rovers, James Webb Space Telescope, International Space Station), updated all message exchanges from "Lance" to "Akshat", and personalized greetings while maintaining the same message filtering and trimming demonstrations.
