@@ -162,3 +162,8 @@ echo "TAVILY_API_KEY=\"$TAVILY_API_KEY\"" >> module-4/studio/.env
 **What I learned:** Learned three techniques to manage long-running conversations and control token usage: using RemoveMessage with add_messages reducer to delete old messages from state, filtering messages by slicing before passing to the model, and trimming messages based on token count using trim_messages function with configurable strategies.
 
 **Code modifications:** Changed conversation theme from ocean mammals to space exploration (Mars rovers, James Webb Space Telescope, International Space Station), updated all message exchanges from "Lance" to "Akshat", and personalized greetings while maintaining the same message filtering and trimming demonstrations.
+
+## Module 2 - chatbot-summarization.ipynb Learning Summary
+**What I learned:** Built a chatbot with conversation summarization to maintain compressed memory of long conversations without high token costs. Learned to use conditional logic to trigger summarization after a threshold (6 messages), incorporate summaries into prompts as context, and combine summarization with MemorySaver checkpointing for persistent multi-turn conversations across sessions using thread IDs.
+
+**Code modifications:** Changed conversation from sports (49ers, Nick Bosa) to AI/technology interests (artificial intelligence, LangGraph framework), updated name from "Lance" to "Akshat", and personalized conversation topics while demonstrating the same summarization and memory persistence features.
