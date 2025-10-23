@@ -167,3 +167,8 @@ echo "TAVILY_API_KEY=\"$TAVILY_API_KEY\"" >> module-4/studio/.env
 **What I learned:** Built a chatbot with conversation summarization to maintain compressed memory of long conversations without high token costs. Learned to use conditional logic to trigger summarization after a threshold (6 messages), incorporate summaries into prompts as context, and combine summarization with MemorySaver checkpointing for persistent multi-turn conversations across sessions using thread IDs.
 
 **Code modifications:** Changed conversation from sports (49ers, Nick Bosa) to AI/technology interests (artificial intelligence, LangGraph framework), updated name from "Lance" to "Akshat", and personalized conversation topics while demonstrating the same summarization and memory persistence features.
+
+## Module 2 - chatbot-external-memory.ipynb Learning Summary
+**What I learned:** Learned how to use external databases (SQLite) for persistent checkpointing, enabling conversation memory that survives across notebook restarts and application sessions. Discovered that SqliteSaver can create in-memory databases (":memory:") or persistent databases on disk, and how state is automatically saved to the database and can be reloaded from disk even after kernel restarts.
+
+**Code modifications:** Changed conversation from sports theme (49ers) to programming interests (Python and LangGraph), updated name from "Lance" to "Akshat", and personalized the chatbot conversation while demonstrating the same external memory persistence with SQLite database checkpointing.
