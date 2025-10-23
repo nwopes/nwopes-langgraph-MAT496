@@ -152,3 +152,8 @@ echo "TAVILY_API_KEY=\"$TAVILY_API_KEY\"" >> module-4/studio/.env
 **What I learned:** Learned how reducers control state updates in LangGraph by specifying how to handle concurrent updates from parallel nodes. Used operator.add for list concatenation, created custom reducers to handle None values, and explored add_messages reducer for message management including appending, rewriting (same ID), and removal with RemoveMessage.
 
 **Code modifications:** Changed from generic foo integer to score tracking system (adding points: 10, 5, 15), updated all state variables from "foo" to "score", changed initial value from 1 to 50, modified message examples to space exploration theme with my name, and updated custom reducer to work with score lists.
+
+## Module 2 - multiple-schemas.ipynb Learning Summary
+**What I learned:** Learned how to use multiple state schemas in LangGraph including private state (for internal node communication not in graph output), and explicit input/output schemas to filter what keys are exposed. Input/output schemas act as filters to constrain graph interfaces while internal schemas can contain all working data.
+
+**Code modifications:** Changed from generic foo/baz to student_score/bonus_points for private state example, updated question/answer/notes to student_name/grade/feedback for input/output schemas, personalized with my name "Akshat", and modified values to reflect a student grading system with scores and performance feedback.
