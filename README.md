@@ -142,3 +142,8 @@ echo "TAVILY_API_KEY=\"$TAVILY_API_KEY\"" >> module-4/studio/.env
 **What I learned:** Implemented persistent memory in agents using LangGraph's checkpointer (MemorySaver) to maintain conversation context across multiple invocations. Learned how thread_id enables stateful conversations by storing graph state checkpoints, allowing agents to reference previous interactions and maintain context.
 
 **Code modifications:** Changed from arithmetic operations (add/multiply/divide) to string manipulation tools (uppercase, reverse, count characters), updated system message for string operations, and modified examples to demonstrate memory retention with text transformations.
+
+## Module 2 - state-schema.ipynb Learning Summary
+**What I learned:** Explored three different ways to define state schemas in LangGraph: TypedDict (type hints only), dataclass (structured data), and Pydantic (runtime validation). Learned that TypedDict and dataclass provide type hints but don't enforce at runtime, while Pydantic validates data and catches errors before execution.
+
+**Code modifications:** Changed from name/mood theme to student/grade theme (A-F letter grades), updated all state definitions across TypedDict, dataclass, and Pydantic examples, adjusted probability split from 50/50 to 60/40, and personalized examples with my name.
