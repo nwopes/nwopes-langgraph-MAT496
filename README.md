@@ -147,3 +147,8 @@ echo "TAVILY_API_KEY=\"$TAVILY_API_KEY\"" >> module-4/studio/.env
 **What I learned:** Explored three different ways to define state schemas in LangGraph: TypedDict (type hints only), dataclass (structured data), and Pydantic (runtime validation). Learned that TypedDict and dataclass provide type hints but don't enforce at runtime, while Pydantic validates data and catches errors before execution.
 
 **Code modifications:** Changed from name/mood theme to student/grade theme (A-F letter grades), updated all state definitions across TypedDict, dataclass, and Pydantic examples, adjusted probability split from 50/50 to 60/40, and personalized examples with my name.
+
+## Module 2 - state-reducers.ipynb Learning Summary
+**What I learned:** Learned how reducers control state updates in LangGraph by specifying how to handle concurrent updates from parallel nodes. Used operator.add for list concatenation, created custom reducers to handle None values, and explored add_messages reducer for message management including appending, rewriting (same ID), and removal with RemoveMessage.
+
+**Code modifications:** Changed from generic foo integer to score tracking system (adding points: 10, 5, 15), updated all state variables from "foo" to "score", changed initial value from 1 to 50, modified message examples to space exploration theme with my name, and updated custom reducer to work with score lists.
