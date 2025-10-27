@@ -187,3 +187,8 @@ echo "TAVILY_API_KEY=\"$TAVILY_API_KEY\"" >> module-4/studio/.env
 **What I learned:** Learned how to directly edit graph state after breakpoints using update_state method, either by appending new messages or overwriting existing ones by supplying message IDs. Discovered how to create a human_feedback node as a placeholder for user input, and use as_node parameter to apply state updates as if they came from a specific node, enabling seamless human-in-the-loop workflows.
 
 **Code modifications:** Changed from arithmetic operations (multiply, add, divide) to unit conversion tools (Celsius to Fahrenheit, kilometers to miles, pounds to kilograms), updated system message to personalize for "Akshat", and modified all example queries from multiplication tasks to temperature, distance, and weight conversions to maintain consistency with Module 3 theme.
+
+## Module 3 - dynamic-breakpoints.ipynb Learning Summary
+**What I learned:** Learned how to implement dynamic breakpoints using NodeInterrupt to conditionally pause graph execution from within nodes based on custom logic, unlike static breakpoints set during compilation. Discovered that NodeInterrupt can pass messages explaining why execution paused, and that updating state is necessary to move past the interrupt, otherwise the graph remains stuck re-running the same node.
+
+**Code modifications:** Changed character limit from 5 to 10, updated input examples from generic "hello world" to personalized names ("Akshat Srivastava" shortened to "Akshat") and tech terms ("LangGraph Framework" shortened to "LangGraph"), and enhanced step messages to be more descriptive about validation and processing stages.
