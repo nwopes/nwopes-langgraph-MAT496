@@ -192,3 +192,8 @@ echo "TAVILY_API_KEY=\"$TAVILY_API_KEY\"" >> module-4/studio/.env
 **What I learned:** Learned how to implement dynamic breakpoints using NodeInterrupt to conditionally pause graph execution from within nodes based on custom logic, unlike static breakpoints set during compilation. Discovered that NodeInterrupt can pass messages explaining why execution paused, and that updating state is necessary to move past the interrupt, otherwise the graph remains stuck re-running the same node.
 
 **Code modifications:** Changed character limit from 5 to 10, updated input examples from generic "hello world" to personalized names ("Akshat Srivastava" shortened to "Akshat") and tech terms ("LangGraph Framework" shortened to "LangGraph"), and enhanced step messages to be more descriptive about validation and processing stages.
+
+## Module 3 - time-travel.ipynb Learning Summary
+**What I learned:** Learned how to use LangGraph's time travel feature to view, replay, and fork from past graph states by accessing checkpoint history with get_state_history. Discovered that replaying executes from a saved checkpoint without changes, while forking allows editing state at a checkpoint (by supplying message ID to overwrite) and then executing with modified state, creating new branches in execution history.
+
+**Code modifications:** Changed from arithmetic operations (multiply, add, divide) to unit conversion tools (Celsius to Fahrenheit, kilometers to miles, meters to feet), updated system message to personalize for "Akshat", and modified all example queries from multiplication tasks (Multiply 2 and 3, Multiply 5 and 3, Multiply 3 and 3) to various unit conversions (temperature, distance conversions) demonstrating replay and fork capabilities with practical examples.
