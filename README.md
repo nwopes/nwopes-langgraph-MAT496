@@ -177,3 +177,8 @@ echo "TAVILY_API_KEY=\"$TAVILY_API_KEY\"" >> module-4/studio/.env
 **What I learned:** Learned how to implement human-in-the-loop workflows using breakpoints by compiling graphs with interrupt_before parameter to pause execution at specific nodes for user approval, debugging, or state editing. Discovered that invoking the graph with None input resumes from the last checkpoint, enabling interactive control over tool execution and agent actions.
 
 **Code modifications:** Changed from arithmetic operations (multiply, add, divide) to practical unit conversions and health calculations (Celsius to Fahrenheit, kilometers to miles, BMI calculator), updated system message to personalize for "Akshat", and modified all example queries to demonstrate temperature conversion, distance conversion, and BMI calculation with breakpoint approval.
+
+## Module 3 - streaming-interruption.ipynb Learning Summary
+**What I learned:** Learned multiple streaming modes in LangGraph including stream_mode="values" (full state after each node), stream_mode="updates" (only state changes), and stream_mode="messages" (message-specific events). Discovered how to use astream_events to stream chat model tokens in real-time by filtering on_chat_model_stream events, enabling token-by-token output for better user experience.
+
+**Code modifications:** Changed conversation from sports theme (49ers NFL team) to technology topics (quantum computing advancements), updated name from "Lance" to "Akshat", and modified API streaming examples from arithmetic operations (Multiply 2 and 3) to unit conversions (Convert 100 kilometers to miles) to align with personalized examples throughout Module 3.
