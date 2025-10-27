@@ -182,3 +182,8 @@ echo "TAVILY_API_KEY=\"$TAVILY_API_KEY\"" >> module-4/studio/.env
 **What I learned:** Learned multiple streaming modes in LangGraph including stream_mode="values" (full state after each node), stream_mode="updates" (only state changes), and stream_mode="messages" (message-specific events). Discovered how to use astream_events to stream chat model tokens in real-time by filtering on_chat_model_stream events, enabling token-by-token output for better user experience.
 
 **Code modifications:** Changed conversation from sports theme (49ers NFL team) to technology topics (quantum computing advancements), updated name from "Lance" to "Akshat", and modified API streaming examples from arithmetic operations (Multiply 2 and 3) to unit conversions (Convert 100 kilometers to miles) to align with personalized examples throughout Module 3.
+
+## Module 3 - edit-state-human-feedback.ipynb Learning Summary
+**What I learned:** Learned how to directly edit graph state after breakpoints using update_state method, either by appending new messages or overwriting existing ones by supplying message IDs. Discovered how to create a human_feedback node as a placeholder for user input, and use as_node parameter to apply state updates as if they came from a specific node, enabling seamless human-in-the-loop workflows.
+
+**Code modifications:** Changed from arithmetic operations (multiply, add, divide) to unit conversion tools (Celsius to Fahrenheit, kilometers to miles, pounds to kilograms), updated system message to personalize for "Akshat", and modified all example queries from multiplication tasks to temperature, distance, and weight conversions to maintain consistency with Module 3 theme.
